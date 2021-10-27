@@ -22,7 +22,7 @@ const htmlString = `<p style="text-align:center;"><span style="font-family:Arial
       return;
     }
     console.log('Docx file created successfully');
-    docx.extract('./example.docx').then((res, err) => {
+    docx.open('./example.docx').then((res, err) => {
       if (err) {
         console.log(err);
       }
